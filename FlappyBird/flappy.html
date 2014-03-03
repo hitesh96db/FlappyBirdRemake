@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/game.css" > </link>
+		<link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Russo+One|Condiment|Viga' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<script src="./js/jquery.js"> </script>
+	</head>
+
+	<body onload="begin()" onkeydown="check(event)" onkeyup="pressed()">
+
+
+	<div id="main" style="background-image:url('./images/backoil2.jpeg');width:1291px;overflow:hidden;height:647px;background-size:1291px 647px;">
+	  <div id="submain" style="background-color:black;z-index:-1;width:1291px;height:647px;opacity:0.5;">
+	  </div>
+                <div style="position:absolute;left:62%;z-index:1;height:100px;width:100px;top:4%">
+                	<p id="score" style="color:white;font-size:50px;position:relative;bottom:27%;left:18%">0<p>
+                </div>
+		<div id="logo">
+			<img title="AngryFlappy Bird" src="./images/fblogo.jpg"></img>
+		</div>
+		<div>
+                        <img title="New User?" id="userimg" src="./images/newuser.png"></img>
+                </div>
+		<div class="ins" style="left:56px;top:45%;">
+			<p id="usr" >User:</p>
+		</div>
+		<div class="ins" style="left:56px;top:54%;" onclick="animate()">
+			<p>How to Play?</p>
+		</div>
+		<div id="insbody" >
+			<img onclick="callme()" style="position:relative;width:50px;height:50px;right:-86%;top:1%;" src="./images/close.jpg"></img>
+			<p style="text-align:center;font-family: 'Viga', sans-serif;font-size:2em;"><b>How to Play?</b></p>
+			<ul>
+				<li>
+					Enter your Username
+				</li>
+			</ul>
+			<ul>
+				<li>
+					Press 'Enter'(any other button would do) to push the bird up
+				</li>
+			</ul>
+			<ul>
+				<li>
+					Press 's' to restart the game
+				</li>
+			</ul>
+			<ul>	
+				<li>
+					View the Top20 highscores on the right
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>Note: Please ensure that your browser is updated for a better gaming experience</b>
+				</li>
+			</ul>
+			<ul>
+                                <li>
+                                        <b>Note: Press ctrl + 0 to reset zoom in browser</b>
+                                </li>
+                        </ul>
+			<p style="text-align:center;font-family: 'Viga', sans-serif;font-size:2em;"><b>Enjoy</b></p>
+		</div>
+		<div id="dev">
+			<p style="text-align:center;font-family: Ubuntu, sans-serif;font-size:1.2em;color:white;">Developed by: Hitesh &#38; Ayush Mishra</p>
+		</div>
+		<canvas id="draw" width="565px" height="609px" style="background-image:url('./images/sun.png');background-size:909px 609px;margin-left:25%;margin-top:1.5%;position:absolute;margin-top:-49.5%;">Sorry :( Your Browser doesn't support Canvas!</canvas>
+		<img id="b1" src="./images/bird.jpg" style="display:none;"></img>
+		<img id="pillup" src="./images/up.jpg" style="display:none;"></img>
+		<img id="pilldown" src="./images/down.jpg" style="display:none;"></img>
+		<img id="over" src="./images/gameover.jpg" style="display:none;"></img>
+		<img id="b5" src="./images/bird5.jpg" style="display:none;"></img>
+		<img id="b6" src="./images/bird6.jpg" style="display:none;"></img>
+
+	<div id="high">
+		<p style="text-aling:center;font-family: 'Viga', sans-serif;font-size:2em;">Highscores</p>
+	</div>
+	<div id="highScoreTable">
+	<div id="highscore-header">
+	</div>
+	<table>
+	    <tr>
+		<td class="tabler">No</td>
+	        <td class="table">UserName</td>
+	        <td class="table">Score</td>
+	    </tr>
+	</table>
+
+		<script src="./js/game.js"></script>
+		<script> fillHighScores(hscores); </script>
+	</div>
+	</div>
+</body>
+</html>

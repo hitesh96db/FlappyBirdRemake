@@ -1,0 +1,154 @@
+#highScoreTable {
+
+	overflow-y:scroll;
+	height:500px;
+	width:340px;
+	background-color:  #66FF33;
+	position:absolute;
+	top:95px;
+	right:10px;
+}
+#gname
+{
+	font-family: 'Viga', sans-serif;
+	font-size:40px;
+	position:absolute;
+	left:1.7%;
+	bottom:96%;
+	width:264px;
+	height:50px;
+}
+#gname > p
+{
+	text-align:center;
+	color:red;
+}
+
+#logo > img
+{
+    border-radius: 86px;
+    height: 50px;
+    left: 72.5%;
+    position: absolute;
+    top: 34px;
+    width: 50px;
+}
+
+#userimg{
+	left:27px;
+	width:80px;
+	height:80px;
+	position:absolute;
+	z-index:1;
+	bottom:47.2%;
+}
+
+#score
+{
+	font-family: 'Press Start 2P', cursive;
+}
+
+.ins
+{
+	bottom:0%;
+	background-color:blue;
+	position:absolute;
+	width:200px;
+	height:50px;
+	border-radius:100px;
+}
+
+.ins > p
+{
+	text-align:center;
+	font-family: Ubuntu, sans-serif;
+	color:white;
+}
+
+#insbody
+{
+    background-color: #3399FF;
+    height: 647px;
+    left: -400px;
+    position: absolute;
+    top: 8px;
+    width: 400px;
+    z-index: 1;
+}
+
+.classname
+{
+animation-name:remove;
+animation-duration:2s;
+}
+
+li
+{
+	font-family: Ubuntu, sans-serif;
+        color:black;
+	font-size:1.4em;
+}
+
+#high
+{
+    height: 80px;
+    left: 77.5%;
+    position: absolute;
+    top: 6px;
+    width: 100px;
+}
+.table
+{
+	font-family: Ubuntu, sans-serif;
+	color:black;
+	font-size:1.4em;
+	text-align:center;
+	width:100%;
+	padding:6px;
+	background-color:blue;
+}
+.tabler
+{
+	font-family: Ubuntu, sans-serif;
+	padding:6px;
+	background-color:black;
+	width:2%;
+	color:white;
+	font-size:1.4em;
+}
+
+#dev
+{
+//    background-color: #0000FF;
+    bottom: -3%;
+    height: 100px;
+    left: 20px;
+    position: absolute;
+    width: 290px;
+}
+
+
+@-webkit-keyframes move
+{
+0% { left:-375px;}
+100% {left:15px;}
+}
+
+@keyframes move
+{
+0% { left:-375px;}
+100% {left:15px;}
+}
+
+@-webkit-keyframes remove
+{
+0% {left:15px;}
+100% {left:-400px;}
+}
+
+@keyframes remove
+{
+0% {left:15px;}
+100% {left:-400px;}
+}
+
