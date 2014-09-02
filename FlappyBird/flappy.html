@@ -9,13 +9,13 @@
 		<script src="./js/jquery.js"> </script>
 	</head>
 
-	<body onload="begin()" onkeydown="check(event)" onkeyup="pressed()" style="background-image:url('./images/backoil2.jpeg');width:100%;overflow:hidden;height:660px;left:0%;right:0%;top:0%;background-size:100% 100%;background-attachment:fixed;background-repeat:no-repeat;">
+	<body onload="begin()" onkeydown="check(event)" onkeyup="pressed()">
 
 
-	<div id="main" style="background-image:url('./images/backoil2.jpeg');margin:0;padding:0;height:100%;width:100%;background-size:100% 100%;">
-	  <div id="submain" style="background-color:black;z-index:-1;width:100%;height:100%;opacity:0.5;">
+	<div id="main" style="background-image:url('./images/backoil2.jpeg');width:1291px;overflow:hidden;height:647px;background-size:1291px 647px;">
+	  <div id="submain" style="background-color:black;z-index:-1;width:1291px;height:647px;opacity:0.5;">
 	  </div>
-                <div style="z-index:1;position:absolute;left:62%;height:25%;width:20%;top:3.5%">
+                <div style="position:absolute;left:62%;z-index:1;height:100px;width:100px;top:4%">
                 	<p id="score" style="color:white;font-size:50px;position:relative;bottom:27%;left:18%">0<p>
                 </div>
 		<div id="logo">
@@ -24,7 +24,7 @@
 		<div>
                         <img title="New User?" id="userimg" src="./images/newuser.png"></img>
                 </div>
-		<div class="ins" style="left:4.5%;top:45%;">
+		<div class="ins" style="left:56px;top:45%;">
 			<p id="usr" >User:</p>
 		</div>
 		<div class="ins" style="left:56px;top:54%;" onclick="animate()">
@@ -65,9 +65,9 @@
                         </ul>
 			<p style="text-align:center;font-family: 'Viga', sans-serif;font-size:2em;"><b>Enjoy</b></p>
 		</div>
-		<!--<div id="dev">
+		<div id="dev">
 			<p style="text-align:center;font-family: Ubuntu, sans-serif;font-size:1.2em;color:white;">Developed by: Hitesh &#38; Ayush Mishra</p>
-		</div>-->
+		</div>
 		<canvas id="draw" width="565px" height="609px" style="background-image:url('./images/sun.png');background-size:909px 609px;margin-left:25%;margin-top:1.5%;position:absolute;margin-top:-49.5%;">Sorry :( Your Browser doesn't support Canvas!</canvas>
 		<img id="b1" src="./images/bird.jpg" style="display:none;"></img>
 		<img id="pillup" src="./images/up.jpg" style="display:none;"></img>
@@ -93,9 +93,6 @@
 		<script src="./js/game.js"></script>
 		<script> fillHighScores(hscores); </script>
 	</div>
-	<div id="dev">
-			<p style="text-align:center;font-family: Ubuntu, sans-serif;font-size:1.2em;color:white;">Developed by: Hitesh &#38; Ayush Mishra</p>
-		</div>
 	</div>
 </body>
 </html>
